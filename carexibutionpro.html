@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto Technicia - Grand Car Exhibition 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* HEADER */
+header{
+background:black;
+padding:20px;
+text-align:center;
+letter-spacing:2px;
+}
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffcc00;
+}
+
+/* HERO SECTION */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background-size:cover;
+background-position:center;
+animation: heroSlider 20s infinite;
+}
+
+/* Image Changing Animation */
+@keyframes heroSlider{
+
+0%{
+background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+}
+
+25%{
+background-image:url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8');
+}
+
+50%{
+background-image:url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366');
+}
+
+75%{
+background-image:url('https://images.unsplash.com/photo-1502877338535-766e1452684a');
+}
+
+100%{
+background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+}
+}
+
+.hero-content{
+background:rgba(0,0,0,0.7);
+padding:30px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero button{
+padding:12px 25px;
+margin-top:15px;
+border:none;
+background:#ff0000;
+color:white;
+cursor:pointer;
+border-radius:5px;
+font-size:16px;
+}
+
+.hero button:hover{
+background:#ffcc00;
+color:black;
+}
+
+.section{
+padding:60px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:30px;
+color:#ffcc00;
+}
+
+/* CAR CARDS */
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+.card{
+background:white;
+color:black;
+width:23%;
+margin-bottom:25px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:0 10px 10px;
+font-size:14px;
+}
+
+/* SCHEDULE */
+.schedule-box{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+/* COUNTDOWN */
+#countdown{
+font-size:25px;
+text-align:center;
+margin-top:20px;
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+color:black;
+}
+
+table, th, td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+/* FORM */
+form{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+}
+
+input, select{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+button.form-btn{
+background:black;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+}
+
+button.form-btn:hover{
+background:red;
+}
+
+/* FAQ */
+.faq-item{
+background:white;
+color:black;
+margin-bottom:10px;
+padding:15px;
+border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.card{
+width:100%;
+}
+.grid{
+flex-direction:column;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Auto Technicia - Grand Car Exhibition 2026</h1>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#cars">Cars</a>
+<a href="#schedule">Schedule</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Experience Power & Luxury</h1>
+<p>Date: 15 March 2026 | Pune, Maharashtra</p>
+<button onclick="location.href='register.html'">Register Now</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Event</h2>
+<p>
+Auto Technicia 2026 is India's grand auto exhibition featuring brands like 
+Tata Motors, Mahindra & Mahindra, BMW, Mercedes-Benz, Tesla, Lamborghini & Audi.
+Experience live launches, test drives and exclusive offers.
+</p>
+</section>
+
+<!-- FEATURED CARS -->
+<!-- FEATURED CARS -->
+<section class="section" id="cars">
+<h2>Featured Cars Collection</h2>
+
+<div class="grid">
+
+<!-- BMW -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+<h3>BMW M4 Competition</h3>
+<p>Engine: 3.0L Twin Turbo</p>
+<p>Power: 503 HP</p>
+<p>Price: ₹1.5 Crore</p>
+</div>
+
+<!-- Mercedes -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8">
+<h3>Mercedes AMG GT</h3>
+<p>Engine: 4.0L V8</p>
+<p>Top Speed: 315 km/h</p>
+<p>Price: ₹2.7 Crore</p>
+</div>
+
+<!-- Audi -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e">
+<h3>Audi R8 V10</h3>
+<p>Engine: 5.2L V10</p>
+<p>0-100 km/h: 3.1 sec</p>
+<p>Price: ₹2.3 Crore</p>
+</div>
+
+<!-- Lamborghini -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
+<h3>Lamborghini Huracán</h3>
+<p>Engine: 5.2L V10</p>
+<p>Top Speed: 325 km/h</p>
+<p>Price: ₹3.2 Crore</p>
+</div>
+
+<!-- Tesla -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+<h3>Tesla Model S Plaid</h3>
+<p>Electric Performance</p>
+<p>Range: 600 km</p>
+<p>Price: ₹1.7 Crore</p>
+</div>
+
+<!-- Tata -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6">
+<h3>Tata Nexon EV</h3>
+<p>Electric SUV</p>
+<p>Range: 465 km</p>
+<p>Price: ₹18 Lakh</p>
+</div>
+
+<!-- Mahindra -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+<h3>Mahindra XUV700</h3>
+<p>Engine: 2.0L Turbo</p>
+<p>Fuel: Petrol/Diesel</p>
+<p>Price: ₹25 Lakh</p>
+</div>
+
+<!-- Rolls Royce -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+<h3>Rolls Royce Phantom</h3>
+<p>Luxury Sedan</p>
+<p>Engine: 6.75L V12</p>
+<p>Price: ₹9.5 Crore</p>
+</div>
+
+<!-- Porsche -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+<h3>Porsche 911 Turbo</h3>
+<p>Engine: 3.8L Twin Turbo</p>
+<p>Top Speed: 320 km/h</p>
+<p>Price: ₹3.5 Crore</p>
+</div>
+
+<!-- Ferrari -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366">
+<h3>Ferrari F8 Tributo</h3>
+<p>Engine: 3.9L V8</p>
+<p>0-100 km/h: 2.9 sec</p>
+<p>Price: ₹4.0 Crore</p>
+</div>
+
+<!-- Toyota -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98">
+<h3>Toyota Supra</h3>
+<p>Engine: 3.0L Turbo</p>
+<p>Top Speed: 250 km/h</p>
+<p>Price: ₹1.2 Crore</p>
+</div>
+
+<!-- Hyundai -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05c1">
+<h3>Hyundai Ioniq 5</h3>
+<p>Electric SUV</p>
+<p>Range: 631 km</p>
+<p>Price: ₹45 Lakh</p>
+</div>
+
+</div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+<h2>Event Schedule</h2>
+<div class="schedule-box">
+<p>15 March 2026 - 10:00 AM Opening Ceremony</p>
+<p>Special Launch Event - 1:00 PM</p>
+<p>Celebrity Appearance - 5:00 PM</p>
+</div>
+
+<div id="countdown"></div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="booking">
+<h2>Test Drive Booking</h2>
+<form>
+<label>Name:</label>
+<input type="text" required>
+<label>Select Car:</label>
+<select>
+<option>BMW M4</option>
+<option>Mercedes AMG GT</option>
+<option>Tata Harrier EV</option>
+</select>
+<label>Date:</label>
+<input type="date">
+<button class="form-btn">Submit</button>
+</form>
+</section>
+
+<!-- COMPARE -->
+<section class="section">
+<h2>Compare Cars</h2>
+<table>
+<tr>
+<th>Car</th>
+<th>Engine</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>BMW M4</td>
+<td>3.0L Turbo</td>
+<td>₹1.5 Cr</td>
+</tr>
+<tr>
+<td>Mercedes AMG GT</td>
+<td>4.0L V8</td>
+<td>₹2.7 Cr</td>
+</tr>
+</table>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2>FAQ</h2>
+<div class="faq-item">Parking Available: Yes</div>
+<div class="faq-item">Entry Fee: ₹500</div>
+<div class="faq-item">Refund Policy: No Refund</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact</h2>
+<p>Email: autotechnicia@gmail.com</p>
+<p>Phone: +91 9876543210</p>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.092977030473!2d73.856255!3d18.520430"
+width="100%" height="300" style="border-radius:10px;"></iframe>
+</section>
+
+<footer>
+© 2026 Auto Technicia | Designed by Aniket
+</footer>
+
+<script>
+// Countdown Timer
+var countDate = new Date("March 15, 2026 10:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("countdown").innerHTML =
+days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+}, 1000);
+</script>
+
+</body>
+</html>
+
+
+ya code madhe FAQ section ad kara
